@@ -8,6 +8,7 @@ import { Card, Nav } from 'react-bootstrap';
 
 function App() {
 
+  //User Initial Data
   const UserData = [
     {
       id: 1,
@@ -32,12 +33,14 @@ function App() {
     }
   ]
 
+  //addUser Function
   const addUser = (user) => {
     user.id = user.length + 1;
     setUsers([...users, user])
     setEditing(true);
   }
 
+  //Dalete User Function
   const deleteUser = (id) => {
     setUsers(users.filter((user) => user.id !== id))
     setEditing(false);
@@ -50,11 +53,13 @@ function App() {
 
   const [currentUser, setCurrentUser] = useState(initialFormState);
 
+  //user Edit function
   const editRow = (user) => {
     setEditing(true);
     setCurrentUser({ id: user.id, username: user.username, name: user.name, email: user.email, age: user.age })
   }
 
+  //update user Function
   const updateUser = (id, updatedUser) => {
     setEditing(false);
     setUsers(users.map((user) => (user.id === id ? updatedUser : user)))

@@ -4,6 +4,28 @@
   min-height: 100vh;
 }
 
+.add-user {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Nav {
+  background-color: #1b7f86;
+  height: 70px;
+  align-items: center;
+  color: white;
+}
+
+.form-label {
+  font-weight: 600;
+  margin: 0;
+  color: #1b7f86;
+}
+
+.form-input {
+  width: 500px !important;
+  margin: 2px auto;
+  border: 1px solid #1b7f86 !important;
+}
 
 .button-form {
   margin: 10px;
@@ -12,19 +34,6 @@
   height: 48px;
   width: 130px;
   font-weight: 800 !important;
-}
-
-.form-label {
-  font-weight: 600;
-  margin: 0;
-  color: #1b7f86;
-
-}
-
-.form-input {
-  width: 500px !important;
-  margin: 2px auto;
-  border: 1px solid #1b7f86 !important; 
 }
 
 .table {
@@ -40,26 +49,15 @@
   color: #1b7f86;
 }
 
-.Nav{
-  background-color: #1b7f86;
-  height: 70px;
-  align-items: center;
-  color: white;
+.table-data {
+  font-size: 18px;
+  text-align: center;
 }
 
-.add-user{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.user-btn{
+.user-btn {
   margin: 10px;
   background-color: #1b7f86 !important;
   border: 1px solid #1b7f86 !important;
   height: 35px;
   width: 70px;
-}
-
-.table-data{
-  font-size: 18px;
-  text-align: center;
 }
