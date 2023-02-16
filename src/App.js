@@ -4,7 +4,7 @@ import Adduser from './AddUserform';
 import './App.css';
 import UserTable from './UserTable';
 import EditUserForm from './EditUserForm';
-import { Card, Nav } from 'react-bootstrap';
+import {  Nav } from 'react-bootstrap';
 
 function App() {
 
@@ -69,7 +69,7 @@ function App() {
     <div className="App">
       <Nav className='Nav'>
       <h1 className='crud'>CRUD App with Hooks</h1></Nav>
-      <div className='Card'>
+      <div>
         {editing ? (<div>
           <h2 className='add-user'>Edit User</h2>
           <EditUserForm
